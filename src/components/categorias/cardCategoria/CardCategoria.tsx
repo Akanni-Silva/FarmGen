@@ -13,7 +13,7 @@ function CardCategoria({categoria}:CardCategoriaProps) {
       <header className="py-2 text-fuchsia-600 font-bold text-2xl ">
         {categoria.nome}
       </header>
-      <p className="p-2 text-3xl ">{categoria.descricao}</p>
+      <p className="p-2 text ">{categoria.descricao}</p>
 
       <div className="flex  justify-around my-2">
         <Link
@@ -23,7 +23,7 @@ function CardCategoria({categoria}:CardCategoriaProps) {
           Editar
         </Link>
         <Link
-          to={`/deletartema/${categoria.id}`}
+          to={`/deletarcategoria/${categoria.id}`}
           className="w-1/3 rounded-2xl text-slate-100 bg-red-500 hover:bg-red-800 flex items-center justify-center py-2"
         >
           Deletar
